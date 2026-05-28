@@ -1,65 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-  <meta name="theme-color" content="#000000">
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Forkear // We make things happen">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forkear — Desarrollo de software, IoT, IA y más. We make things happen.">
+  <meta name="theme-color" content="#000000">
   <title>Forkear</title>
-  <link rel="stylesheet" href="static/mdl/material.min.css">
-  <script src="static/mdl/material.min.js"></script>
-  <link rel="stylesheet" href="static/mdl/fonts.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/css/forkear.css">
-  <script src="static/js/jquery/jquery-min.js"></script>
 </head>
-
 <body>
 
- 
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="nav-brand">fork<span class="green">ear</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#sobre">Sobre Forkear</a></li>
+        <li><a href="#contacto" class="nav-contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
-
-  <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title"> 
-            <span class=''></span>
-        </span>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-center">
+      <div class="hero-seq">
+        <span class="seq-w s1">software</span>
+        <span class="seq-w s2">networking</span>
+        <span class="seq-w s3">IoT</span>
+        <span class="seq-w s4">blockchain</span>
+        <span class="seq-w s5">inteligencia artificial</span>
+        <span class="seq-w s6">domótica</span>
+        <span class="seq-logo s7"><img src="static/img/forkear-logo.png" alt="Forkear" class="hero-logo-img"></span>
       </div>
-    </header>
+      <p class="hero-sub">We make things happen.</p>
+      <a href="#servicios" class="btn hero-action">Ver servicios</a>
+    </div>
+    <button class="skip-intro" id="skipIntro">skip ↓</button>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="hero-line"></div>
+    </div>
+  </section>
 
+  <!-- SERVICIOS -->
+  <section class="sec" id="servicios">
+    <div class="container">
+      <h2 class="sec-title">Servicios</h2>
+      <p class="sec-sub">Un desarrollador. Múltiples capacidades.</p>
+      <div class="grid-cards">
+        <div class="card reveal">
+          <div class="card-icon mono green">&lt;/&gt;</div>
+          <h3>Desarrollo Web</h3>
+          <p>Apps web, APIs REST, frontends reactivos y backends robustos adaptados a tu necesidad.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon mono green">fn()</div>
+          <h3>Software a Medida</h3>
+          <p>Sistemas, scripts y automatizaciones diseñadas específicamente para tu problema.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon mono green">◉</div>
+          <h3>IoT &amp; Networking</h3>
+          <p>Firmware, dispositivos conectados, protocolos de red y arquitecturas M2M.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon mono green">⬡</div>
+          <h3>Blockchain / Web3</h3>
+          <p>Smart contracts, tokens, wallets e integración con redes descentralizadas.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon mono green">≡≡</div>
+          <h3>IA &amp; Agentes</h3>
+          <p>Pipelines de IA, modelos de lenguaje y orquestadores de agentes autónomos.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon mono green">⊕</div>
+          <h3>Consultoría</h3>
+          <p>Arquitectura de sistemas, auditorías técnicas y asesoramiento estratégico IT.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <main class="mdl-layout__content">
-      <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-        <div class="page-content"> 
-        <div class="sp-container">
-            <div class="sp-content">
-                <div class="sp-globe"></div>
-                <h2 class="frame-1">software</h2>
-                <h2 class="frame-2">networking</h2>
-                <h2 class="frame-3">IoT</h2>
-                <h2 class="frame-4">blockchain</h2>
-                  <h2 class="frame-5"> <img src="static/img/forkear-texto.png" ></h2>
-                <h2 class="frame-6">
-                    <span>We make</span>
-                    <span>things</span>
-                    <span>happeN</span>
-                </h2>
-                
+  <!-- SOBRE FORKEAR -->
+  <section class="sec sec-alt" id="sobre">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <h2 class="sec-title">¿Qué es Forkear?</h2>
+          <p class="about-lead">
+            Ya te está yendo bien. Sabés lo que querés, y por eso llegaste hasta acá.
+          </p>
+          <p>
+            Podríamos ser otra empresa de software más: resolver tickets, optimizar procesos,
+            reducir costos. Lo hacemos, y lo hacemos bien.
+          </p>
+          <p>
+            Pero no nos quedamos ahí. Forkear tiene la capacidad de comprenderte a vos
+            y a tu entorno. De darte el servicio que cualquiera puede darte,
+            <strong>y además mostrarte lo que otros no ven.</strong>
+          </p>
+          <p>
+            Hay múltiples soluciones para cada problema. Y algunas de tus mayores
+            oportunidades todavía no las estás viendo como tales — están disfrazadas de
+            problemas que aún no notaste.
+          </p>
+          <p class="about-close mono green">Somos Forkear. We make things happen.</p>
+          <div class="code-block">
+            <pre><code>/* fork(): un proceso que se bifurca
+   para ejecutar múltiples tareas en paralelo */
+
+pid_t pid = fork();
+
+if (pid == 0) {
+    exec_project();   /* tu problema */
+    find_opportunity(); /* lo que aún no viste */
+} else {
+    wait_for_results(); /* directo, sin intermediarios */
+}</code></pre>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <span class="stat-num green">+15</span>
+            <span class="stat-desc">años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num green">7</span>
+            <span class="stat-desc">áreas de especialización</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num green">128</span>
+            <span class="stat-desc">soluciones realizadas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="sec" id="portfolio">
+    <div class="container">
+      <h2 class="sec-title">Portfolio</h2>
+      <p class="sec-sub">Proyectos seleccionados.</p>
+      <div class="grid-portfolio">
+        <div class="p-card reveal">
+          <div class="p-img p-img--iot">
+            <div class="p-img-inner">
+              <span class="p-icon mono">◉</span>
+              <span class="p-label mono">SensorNode</span>
             </div>
+          </div>
+          <div class="p-body">
+            <h3>SensorNode — Telemetría Industrial IoT</h3>
+            <p>Plataforma de monitoreo en tiempo real para entornos industriales. Procesamiento de datos de sensores, alertas automáticas y dashboard de control con retención histórica.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">MQTT</span>
+              <span class="tag">InfluxDB</span>
+              <span class="tag">IoT</span>
+            </div>
+          </div>
         </div>
-            
+        <div class="p-card reveal">
+          <div class="p-img p-img--web3">
+            <div class="p-img-inner">
+              <span class="p-icon mono">⬡</span>
+              <span class="p-label mono">HashCert</span>
+            </div>
+          </div>
+          <div class="p-body">
+            <h3>HashCert — Certificación en Blockchain</h3>
+            <p>Sistema de certificación de documentos sobre Ethereum. Contratos inteligentes para verificar autenticidad e integridad sin depender de terceros de confianza.</p>
+            <div class="tags">
+              <span class="tag">Solidity</span>
+              <span class="tag">Ethereum</span>
+              <span class="tag">React</span>
+              <span class="tag">Web3.js</span>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-        <div class="page-content"> 
-            
+        <div class="p-card reveal">
+          <div class="p-img p-img--ai">
+            <div class="p-img-inner">
+              <span class="p-icon mono">≡≡</span>
+              <span class="p-label mono">FlowAgent</span>
+            </div>
+          </div>
+          <div class="p-body">
+            <h3>FlowAgent — Orquestador de Agentes IA</h3>
+            <p>Sistema multi-agente que automatiza flujos de trabajo empresariales usando LLMs. Reduce tiempos operativos hasta un 70% en procesos repetitivos de alta complejidad.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">LLM</span>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="sec" id="contacto">
+    <div class="container">
+      <h2 class="sec-title">Contacto</h2>
+      <p class="sec-sub">¿Tenés un proyecto? Hablemos.</p>
+      <div class="contact-wrap">
+        <p class="contact-email reveal">
+          Escribime a <a href="#" class="green-link" id="emailLink">···</a> y charlamos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="nav-brand">fork<span class="green">ear</span></span>
+      <span class="footer-copy mono">© 2026 · We make things happen.</span>
+    </div>
+  </footer>
+
+  <script src="static/js/forkear.js"></script>
 </body>
 </html>
