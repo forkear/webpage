@@ -1,0 +1,23 @@
+# Forkear
+
+> Technology company founded in Patagonia, Argentina. We build custom software, IoT solutions, blockchain systems, AI agents, and more — for clients worldwide.
+
+## About
+
+Forkear is a technology company based in Patagonia, Argentina. The name comes from the Unix `fork()` process — the system's ability to split and run multiple tasks in parallel. We operate across disciplines, contexts and industries without losing focus or quality in any of them.
+
+We don't just solve the problem you bring us. We have the ability to see what others miss: opportunities that don't have a name yet, problems you don't know you have yet.
+
+## Services
+
+- **Web Development**: Web apps, REST APIs, reactive frontends, robust backends
+- **Custom Software**: Systems, scripts and automations tailored to specific problems
+- **IoT & Networking**: Firmware, connected devices, network protocols, M2M architectures
+- **Blockchain / Web3**: Smart contracts, tokens, wallets, decentralized network integration
+- **AI & Agents**: AI pipelines, language models, autonomous agent orchestrators
+- **Consulting**: Systems architecture, technical audits, strategic IT advisory
+
+## Contact
+
+- Website: https://forkear.com
+- Contact: https://forkear.com/#contacto
